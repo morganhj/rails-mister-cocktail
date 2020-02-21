@@ -1,0 +1,22 @@
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+<% if @dose.errors.any? %>
+<div class="errors-container">
+  <ul>
+    <% @dose.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<%= f.input :description %>
+<%= f.input :amount %>
+<%= f.association :ingredient, collection: @ingredients %>
+
+<div class="d-flex justify-content-between align-items-center">
+  <%= link_to cocktails_path do %>
+    <i class="fas fa-backward btn btn-light">   Back to Cocktails</i>
+  <% end %>
+  <%= f.submit "Add Dose", class: "btn btn-light" %>
+</div>
+<% end %>

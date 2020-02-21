@@ -1,0 +1,71 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  color: white;
+  margin-left: 20px;
+  background-image: asset-url('background.jpeg');
+  background-position: relative;
+  background-size: cover;
+}
+
+.cocktail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  i {
+    margin-left: 10px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 600px;
+  margin-top: 50px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(black, 0.9);
+  box-shadow: 3px 3px 10px black;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  .btn {
+    text-align: center;
+    height: 30px;
+  }
+}
+
+.form-group {
+  label {
+    display: flex;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 30px;
+    abbr {
+      text-decoration: none;
+      margin-left: 5px;
+    }
+  }
+  input {
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    height: 30px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
